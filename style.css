@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    background-color: antiquewhite;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+p{
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 25px;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    align-items: flex-end;
+    gap: 20px;
+}
+img{
+    width: 100%;
+
+}
+.aside{
+    background-color: aqua;
+    flex: 30%;
+}
+.aside img{
+    width: 80%;
+    display: block; /* para centrar indivivualmente */
+    margin: 10px auto;
+}
+.section{
+    background-color: beige;
+    flex: 65%;
+    padding: 20px;
+}
+cite{
+    display: block;
+}
+.iframe{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: calc(100vw * 40 / 100);
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 15px;
+    justify-content: space-evenly;
+}
+.tarjetas .card{
+    background-color: blue;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #089;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    overflow: auto;
+    aspect-ratio: 700/880;
+    transition: all 1s;
+}
+.tarjetas .card:hover{
+    background-color: rgb(178, 159, 224);
+    transform: scale(0.0);
+}
+
+.tarjetas .card .contenido p:first-child{ /* sin el first child queda en ambos extremos */
+    color: blueviolet;
+    text-align: center;
+    border-bottom: 5px solid coral;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.contenido img{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+
+@media screen and (max-width:900px){
+    .row{
+        flex-direction: column-reverse;
+    }
+}
