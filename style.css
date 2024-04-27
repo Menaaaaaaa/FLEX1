@@ -72,7 +72,7 @@ cite{
 }
 .tarjetas .card:hover{
     background-color: rgb(178, 159, 224);
-    transform: scale(0.0);
+    transform: scale(1); /* para que no se expanda dejar en 1 o el contrario en decimal */
 }
 
 .tarjetas .card .contenido p:first-child{ /* sin el first child queda en ambos extremos */
@@ -88,6 +88,27 @@ cite{
     margin: auto;
 }
 
+.tarjetas .card.unico{
+    order: -1;
+}
+.cuadro{
+    width: 80%;
+    background-color: rgb(166, 166, 224);
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    gap: 25px;
+    margin: 20px auto 40px;
+}
+.cuadro1{
+    width: 85px;
+}
+.cuadro1 img{
+    width: 95px;
+}
 
 @media screen and (max-width:900px){
     .row{
